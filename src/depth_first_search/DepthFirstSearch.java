@@ -13,14 +13,12 @@ public class DepthFirstSearch implements SearchAlgoritm {
     private Dictionary<String, List<String>> graph;
 
     public DepthFirstSearch(Graph graph) {
-
         System.out.println("\nDepth First Search\n");
         this.graph = graph.getDict();
     }
 
     @Override
     public void search(String start, String goal) {
-        // hedef kontrolü
 
         if (start.equals(goal)) {
             System.out.printf("I found '%s'%n", goal);
